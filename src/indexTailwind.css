@@ -1,3 +1,7 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+.customRowGrid {
+  grid-template-rows: max-content minmax(400px, 1fr);
+}
