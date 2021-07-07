@@ -36,7 +36,7 @@ const TotalCountryAPI = () => {
       return country.country.toLowerCase().indexOf(searchText.toLowerCase()) !==
         -1 ? (
         <div
-          className="grid grid-cols-6 auto-rows-max my-1 bg-red-dark text-white p-1"
+          className="grid grid-cols-6 auto-rows-max my-1 bg-blue-verydark rounded text-white p-1"
           key={country.countryInfo._id === null ? i : country.countryInfo._id}
         >
           <div className="col-start-1 col-span-2 flex items-center mr-2 row-start-1 row-end-2">
@@ -56,7 +56,7 @@ const TotalCountryAPI = () => {
     } else {
       return (
         <div
-          className="grid grid-cols-6 auto-rows-max my-1 bg-red-dark text-white p-1"
+          className="grid grid-cols-6 auto-rows-max my-1 bg-blue-verydark rounded text-white p-1"
           key={country.countryInfo._id === null ? i : country.countryInfo._id}
         >
           <div className="col-start-1 col-span-2 flex items-center mr-2 row-start-1 row-end-2">
@@ -85,9 +85,9 @@ const TotalCountryAPI = () => {
     >
       <div className="overflow-y-scroll">
         {countries.every((element) => element === null) ? (
-          <p className="text-left text-xl">
+          <p className="text-left text-xl text-blue-verylight">
             We couldn't find the country{' '}
-            <i className="las la-heart-broken text-4xl block text-center"></i>
+            <i className="las la-heart-broken text-5xl block text-center"></i>
           </p>
         ) : (
           countries

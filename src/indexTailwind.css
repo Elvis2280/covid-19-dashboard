@@ -5,3 +5,11 @@
 .customRowGrid {
   grid-template-rows: max-content minmax(400px, 1fr);
 }
+.leaflet-div-icon {
+  background: transparent !important;
+  border: none !important;
+}
+
+.font-small {
+  font-size: 0.6rem;
+}

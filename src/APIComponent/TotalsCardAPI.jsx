@@ -40,21 +40,21 @@ const TotalsCardAPI = ({ totalKeys }) => {
   return (
     <TotalsCard className="col-start-1 col-end-3 row-start-1 row-span-1">
       <p className="font-bold text-center">
-        Total <span className="text-gray-100">{option}</span>{' '}
+        Total <span className="text-white">{option}</span>{' '}
         {option === 'vaccine' ? 'administered' : 'by covid-19'}
       </p>
       <p className="font-bold text-2xl my-2">
         {new Intl.NumberFormat().format(totalData)}
       </p>
 
-      <div className="flex items-center w-full justify-center">
+      <div className="flex items-center w-full justify-center bg-blue-verydark rounded">
         <span onClick={(e) => selectOption(e)}>
           <i
             className="las la-caret-left text-2xl cursor-pointer"
             id="previous_option"
           ></i>
         </span>
-        <p className="px-1 text-gray-100 w-2/4 text-center">
+        <p className="px-1 text-white w-2/4 text-center">
           {option.charAt(0).toUpperCase() + option.slice(1)}
         </p>
         <span onClick={(e) => selectOption(e)}>

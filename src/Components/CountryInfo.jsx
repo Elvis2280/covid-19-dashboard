@@ -8,13 +8,13 @@ const CountryInfo = ({
   children,
 }) => {
   return (
-    <div className={`${className} bg-red-light p-2`}>
-      <h3 className="text-center text-red-dark font-semibold">{title}</h3>
+    <div className={`${className} bg-blue-dark p-2 rounded`}>
+      <h3 className="text-center text-blue-verylight font-semibold">{title}</h3>
 
-      <div className="pt-3">
+      <div className="pt-3 flex justify-center">
         <input
           type="text"
-          className="w-full bg-red-500 placeholder-red-light text-white px-2 rounded outline-none mb-2 py-1"
+          className="bg-gray-100 w-11/12 placeholder-red-light text-blue-verydark px-2 rounded outline-none mb-3 py-1"
           placeholder="Search ..."
           onChange={(e) => getTextInput(e)}
           value={inputValue}

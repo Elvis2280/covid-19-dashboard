@@ -2,7 +2,7 @@ import React from 'react';
 
 const Header = ({ title, name, icon }) => {
   return (
-    <div className="bg-red-normal p-2 flex justify-between items-center mb-2">
+    <div className="p-2 bg-blue-verydark flex justify-between items-center mb-2 rounded">
       <p className="text-gray-100 text-lg">
         {name} <i className="las la-heart text-white text-xl"></i>
       </p>
