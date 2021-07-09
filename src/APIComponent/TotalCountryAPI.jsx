@@ -36,7 +36,7 @@ const TotalCountryAPI = () => {
       return country.country.toLowerCase().indexOf(searchText.toLowerCase()) !==
         -1 ? (
         <div
-          className="grid grid-cols-6 auto-rows-max my-1 bg-blue-verydark rounded text-white p-1"
+          className="grid grid-cols-6 auto-rows-max my-1 bg-blue-verydark rounded p-2 text-white"
           key={country.countryInfo._id === null ? i : country.countryInfo._id}
         >
           <div className="col-start-1 col-span-2 flex items-center mr-2 row-start-1 row-end-2">
@@ -56,7 +56,7 @@ const TotalCountryAPI = () => {
     } else {
       return (
         <div
-          className="grid grid-cols-6 auto-rows-max my-1 bg-blue-verydark rounded text-white p-1"
+          className="grid grid-cols-6 auto-rows-max my-1 bg-blue-verydark rounded text-white p-2"
           key={country.countryInfo._id === null ? i : country.countryInfo._id}
         >
           <div className="col-start-1 col-span-2 flex items-center mr-2 row-start-1 row-end-2">
@@ -81,9 +81,9 @@ const TotalCountryAPI = () => {
       getTextInput={getTextInput}
       inputValue={searchText}
       title="Cases and Deaths by country"
-      className="row-start-2 row-span-1 col-start-1 col-end-3 flex flex-col"
+      className="col-start-1 col-span-10 row-start-3 countries__aside overflow-hidden sm:row-start-2 sm:row-end-3 sm:col-span-3 lg:col-span-2"
     >
-      <div className="overflow-y-scroll">
+      <div className="h-full overflow-y-auto">
         {countries.every((element) => element === null) ? (
           <p className="text-left text-xl text-blue-verylight">
             We couldn't find the country{' '}

@@ -51,11 +51,12 @@ const ShowMap = () => {
   });
 
   return (
-    <div className="col-span-5 row-span-2 bg-blue-dark rounded">
+    <div className=" bg-blue-dark rounded col-start-1 col-span-10 row-start-4 map lg:col-start-3 lg:col-end-8 lg:row-start-1 lg:row-span-2 lg:h-full">
       <MapContainer
         center={[8.752900594999996, -82.87873458499998]}
         zoom={2}
         className="h-full rounded"
+        scrollWheelZoom={false}
       >
         <TileLayer
           attribution='&copy;  <a href="https://www.openstreetmap.org/">OpenStreetMap</a> contributors, <a href="https://creativecommons.org/licenses/by-sa/2.0/">CC-BY-SA</a>, Imagery &copy; <a href="https://www.mapbox.com/">Mapbox</a> contributors'

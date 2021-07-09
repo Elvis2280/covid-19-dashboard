@@ -13,3 +13,35 @@
 .font-small {
   font-size: 0.6rem;
 }
+
+.countries__aside {
+  height: 60vh;
+}
+
+.map {
+  height: 60vh;
+}
+
+@media only screen and (min-width: 640px) {
+  .countries__aside {
+    height: 80vh;
+  }
+
+  .map {
+    height: 40vh;
+  }
+}
+
+@media only screen and (min-width: 1024px) {
+  .countries__aside {
+    height: 75vh;
+  }
+}
+
+.hv-30 {
+  height: 30vh;
+}
+
+.hv-80 {
+  height: 80vh;
+}

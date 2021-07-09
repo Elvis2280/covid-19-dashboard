@@ -7,7 +7,7 @@ import ShowMap from './ShowMap';
 const Dashboard = () => {
   const totalKeys = ['vaccine', 'deaths', 'cases', 'recovered', 'active'];
   return (
-    <div className="grid grid-cols-10 customRowGrid gap-2 flex-1 overflow-hidden">
+    <div className="grid grid-cols-10 auto-rows-auto gap-2 flex-1 overflow-hidden">
       <TotalsCardAPI totalKeys={totalKeys} />
       <TotalCountryAPI />
       <ShowMap />

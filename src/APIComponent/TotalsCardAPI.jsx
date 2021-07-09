@@ -38,7 +38,7 @@ const TotalsCardAPI = ({ totalKeys }) => {
   };
 
   return (
-    <TotalsCard className="col-start-1 col-end-3 row-start-1 row-span-1">
+    <TotalsCard className="col-start-1 col-span-10 row-start-1 row-end-2 sm:col-span-3 lg:col-span-2">
       <p className="font-bold text-center">
         Total <span className="text-white">{option}</span>{' '}
         {option === 'vaccine' ? 'administered' : 'by covid-19'}
@@ -47,7 +47,7 @@ const TotalsCardAPI = ({ totalKeys }) => {
         {new Intl.NumberFormat().format(totalData)}
       </p>
 
-      <div className="flex items-center w-full justify-center bg-blue-verydark rounded">
+      <div className="flex items-center w-3/4 justify-center bg-blue-verydark rounded">
         <span onClick={(e) => selectOption(e)}>
           <i
             className="las la-caret-left text-2xl cursor-pointer"

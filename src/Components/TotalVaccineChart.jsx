@@ -11,13 +11,13 @@ import {
 import FormatNumber from '../utility/FormatNumber';
 const TotalVaccineChart = ({ data, title, dataKey }) => {
   return (
-    <div className="relative bg-blue-verydark rounded">
+    <div className="relative bg-blue-verydark rounded lg:flex-1 hv-30">
       <p className="font-semibold text-blue-verylight text-center pb-2">
         {title}
       </p>
       <ResponsiveContainer
-        width="95%"
-        height="95%"
+        width="85%"
+        height="70%"
         className="bg-red-dark rounded mx-auto"
       >
         <LineChart

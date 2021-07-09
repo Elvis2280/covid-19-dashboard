@@ -53,9 +53,9 @@ const TotalChartsAPI = () => {
 
     dailyDeaths_Cases();
   }, []);
-
+  //col-span-3 row-span-2
   return (
-    <div className="col-span-3 row-span-2 bg-blue-dark grid grid-rows-3 p-2 rounded gap-y-4">
+    <div className="bg-blue-dark grid lg:grid-rows-3 auto-rows-auto grid-cols-1 lg:grid-cols-1 p-2 rounded col-start-1 col-span-10 row-start-2 gap-y-4 sm:col-start-4 sm:col-span-7 sm:row-start-1 row-end-3 lg:col-start-8 lg:col-span-full lg:flex lg:flex-col">
       <TotalVaccineChart
         data={dateVaccine}
         title="Total vaccine dosis"
